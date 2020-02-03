@@ -11,15 +11,29 @@
 </head>
 <body>
     <header>
-      <div class="Menu">
+      <div class="Menu" id="Menu">
+        
+        <label for="check" class="checkbtn">
+         <i class="fas fa-bars"></i>
+        </label>
+        <input type="checkbox" id="check">
+        <div class="Menu-link2" >
+         <a href="#Menu">ACCEUIL</a>
+         <a href="#Galerie">GALERIES</a>
+         <a href="#service">SERVICE</a>
+         <a href="#contact">CONTACT</a>
+         <a>RESERVATION</a>
+         <a>Se connecter</a>
+         <a id="btn-two">Login</a>
+     </div>
        <div class="logo">
            <img src="img/logo.jpg" width="100px">
        </div>
-       <div class="Menu-link">
-           <a>ACCEUIL</a>
-           <a>GALERIES</a>
-           <a>SERVICE</a>
-           <a>CONTACT</a>
+       <div class="Menu-link" >
+           <a href="#Menu">ACCEUIL</a>
+           <a href="#Galerie">GALERIES</a>
+           <a href="#service">SERVICE</a>
+           <a href="#contact">CONTACT</a>
            <a>RESERVATION</a>
        </div>
        <div class="btn">
@@ -38,7 +52,7 @@
       </div>
     </header>
     <!-- Partie Galeries -->
-    <section class="Galerie">
+    <section class="Galerie" id="Galerie">
         <div class="Galerie-title">
             <h2>GALERIES</h2>
             <div class="border"></div>
@@ -46,17 +60,15 @@
         </div>
         <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
         <div class="mySlides Galerie-first">
-
             <div class="Galerie-info">
                 <h3>PEUGOT</h3>
                 <div class="border2"></div>
                 <div class="Galerie-info-first">
                     <span>168</span>
                     <span>&nbsp;DH*</span><br>
-                    <span> Kilométrage illimité + Service Inclus </span><br>
+                    <span>Kilométrage illimité + Service Inclus </span><br>
                     <button>RESERVER MAINTENANT</button>
-                </div>
-                
+                </div>    
             </div>
             <div class="Galerie-image">
                 <img src="img/Galerie/img1.png">
@@ -102,7 +114,7 @@
         <button class="w3-button w3-black w3-display-right" id="exp" onclick="plusDivs(1)">&#10095;</button>  
     </section>
     <!-- Service -->
-    <section class="service">
+    <section class="service" id="service">
         <h1 class="section-title">Services</h1>
         <div class="border"></div>
         <div class="containner">
@@ -139,7 +151,7 @@
             </div>
     </section>
     <!-- CONTACT NOUS -->
-    <section class="Contact">
+    <section class="Contact" id="contact">
         <div class="Contact-generale" >
             <div class="Contact-info">
              <h2>CONTACT</h2>
