@@ -103,7 +103,7 @@ body {
   67% {
     background-image: url(../img/header/scc2.jpg); } }
 /*responsive*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .Menu {
     display: flex;
     width: 100%;
@@ -151,7 +151,7 @@ body {
     display: block; }
 
   .Menu-link2 {
-    top: 97px;
+    top: 90px;
     position: absolute;
     left: -70px;
     z-index: 1; }
@@ -180,7 +180,8 @@ body {
       text-align: left;
       padding-left: 112px;
       position: relative;
-      top: 100px; }
+      top: 100px;
+      width: 80%; }
       .header-img .text button {
         color: white;
         background-color: #05AAEA;
@@ -214,10 +215,10 @@ body {
   .Galerie .w3-black {
     margin-left: 100px;
     width: 50px;
-    background-color: #333333;
     border: 100%;
     color: #05AAEA;
     border-radius: 50%;
+    background-color: transparent;
     height: 20px;
     position: relative;
     top: 235px;
@@ -262,6 +263,160 @@ body {
       margin-top: 20px;
       outline: none; }
 
+@media screen and (max-width: 1200px) {
+  .Galerie-first {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -98px;
+    text-align: center; }
+    .Galerie-first .Galerie-info .border2 {
+      width: 80px;
+      height: 10px;
+      background: #05AAEA;
+      margin-top: -35px;
+      display: none; }
+    .Galerie-first .Galerie-info h3 {
+      font-size: 276%;
+      color: #05AAEA; }
+    .Galerie-first .Galerie-info-first {
+      font-family: 'Montserrat';
+      margin-top: 30px; }
+      .Galerie-first .Galerie-info-first span {
+        font-size: 156%; }
+      .Galerie-first .Galerie-info-first button {
+        color: white;
+        background-color: #05AAEA;
+        border: white;
+        padding: 10px;
+        font-size: 16px;
+        margin-top: 20px;
+        outline: none; }
+
+  .Galerie {
+    height: 700px; }
+    .Galerie .mySlides {
+      display: none; }
+    .Galerie .w3-black {
+      margin-left: 100px;
+      width: 50px;
+      background-color: transparent;
+      border: 100%;
+      color: #05AAEA;
+      border-radius: 50%;
+      height: 20px;
+      position: relative;
+      top: 235px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      border-radius: 50%;
+      font-size: 32px;
+      outline: none;
+      border: white; }
+      .Galerie .w3-black:hover {
+        cursor: pointer; }
+    .Galerie #exp {
+      float: right;
+      position: relative;
+      top: -390px;
+      right: 99px; } }
+@media screen and (max-width: 600px) {
+  .taille {
+    width: 80%; }
+
+  .Galerie {
+    height: 700px; }
+    .Galerie .mySlides {
+      display: none; }
+    .Galerie .w3-black {
+      margin-left: 16px;
+      width: 50px;
+      background-color: transparent;
+      border: 100%;
+      color: #05AAEA;
+      border-radius: 50%;
+      height: 20px;
+      position: relative;
+      top: 280px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      border-radius: 50%;
+      font-size: 32px;
+      outline: none;
+      border: white; }
+      .Galerie .w3-black:hover {
+        cursor: pointer; }
+    .Galerie #exp {
+      float: right;
+      position: relative;
+      top: -196px;
+      right: 12px; } }
+@media screen and (max-width: 400px) {
+  .taille {
+    width: 80%; }
+
+  .Galerie {
+    height: 700px; }
+    .Galerie .mySlides {
+      display: none; }
+    .Galerie .w3-black {
+      margin-left: 16px;
+      width: 50px;
+      background-color: transparent;
+      border: 100%;
+      color: #05AAEA;
+      border-radius: 50%;
+      height: 20px;
+      position: relative;
+      top: 280px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      border-radius: 50%;
+      font-size: 32px;
+      outline: none;
+      border: white; }
+      .Galerie .w3-black:hover {
+        cursor: pointer; }
+    .Galerie #exp {
+      float: right;
+      position: relative;
+      top: -173px;
+      right: 12px; } }
+@media screen and (max-width: 320px) {
+  .taille {
+    width: 80%; }
+
+  .Galerie {
+    height: 700px; }
+    .Galerie .mySlides {
+      display: none; }
+    .Galerie .w3-black {
+      margin-left: 5px;
+      width: 50px;
+      background-color: transparent;
+      border: 100%;
+      color: #05AAEA;
+      border-radius: 50%;
+      height: 20px;
+      position: relative;
+      top: 280px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      border-radius: 50%;
+      font-size: 32px;
+      outline: none;
+      border: white; }
+      .Galerie .w3-black:hover {
+        cursor: pointer; }
+    .Galerie #exp {
+      float: right;
+      position: relative;
+      top: -149px;
+      right: 12px; } }
 /*service*/
 .service {
   background: url(bg.jpg);

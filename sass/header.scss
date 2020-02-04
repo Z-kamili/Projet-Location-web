@@ -128,7 +128,7 @@ body{
         
     }
     /*responsive*/
-    @media screen and (max-width:1000px){
+    @media screen and (max-width:1200px){
 
         .Menu{
             display: flex;
@@ -187,7 +187,7 @@ body{
             display: block;
         }
         .Menu-link2{
-            top: 97px;
+            top: 90px;
             position: absolute;
             left:-70px;
             z-index: 1;
@@ -217,10 +217,11 @@ body{
             margin: auto;
             animation: animate 15s ease-out infinite;
             .text{
-              text-align: left;
-              padding-left: 112px;
-              position: relative;
-              top: 100px;
+                text-align: left;
+                padding-left: 112px;
+                position: relative;
+                top: 100px;
+                width: 80%;
               button{
                 color: $white;
                 background-color: $color;
