@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style2.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="Menu" id="Menu">
+          
+          <label for="check" class="checkbtn">
+           <i class="fas fa-bars"></i>
+          </label>
+          <input type="checkbox" id="check">
+          <div class="Menu-link2" >
+           <a href="#Menu">ACCEUIL</a>
+           <a href="#Galerie">GALERIES</a>
+           <a href="#service">SERVICE</a>
+           <a href="#contact">CONTACT</a>
+           <a>RESERVATION</a>
+           <a class="button">Se connecter</a>
+           <a class="button-2" id="btn-two">S'inscrire</a>
+       </div>
+         <div class="logo">
+             <img src="img/logo.jpg" width="100px">
+         </div>
+         <div class="Menu-link" >
+             <a href="#Menu">ACCEUIL</a>
+             <a href="#Galerie">GALERIES</a>
+             <a href="#service">SERVICE</a>
+             <a href="#contact">CONTACT</a>
+             <a>RESERVATION</a>
+         </div>
+         <!-- <div class="btn">
+          <button class="button-2" id="btn-two" >S'inscrire</button>
+             <button class="button">Se connecter</button>
+             
+         </div> -->
+        <img src="img/add.png" class="add">
+
+        </div>
+        <div class="header-img">
+            <div class="text">
+              <h1>La Reservation Des Voitures</h1>
+              <h2>Réserver maintenant une voiture</h2>
+              <button>BOOK NOW</button>
+            </div>
+           
+            <!-- <button></button> -->
+        </div>
+      </header>
+      <section>
+        <div  id="R" class="Resr">
+            <h1 >RÉSERVER UN VÉHICULE!</h1>
+            <div class="D1">
+                
+            <select name="cars" id="liste" class="cars" onchange="getSelectValue()">
+              <option>Choisr une voiture</option>
+                <option value="DACIA">DACIA</option>
+                <option value="HYUNDAI">HYUNDAI</option>
+                <option value="REANUALT">REANUALT</option>
+              </select>
+              <div class="D">
+                <div class="De">
+              <div class="depart"><img src="img/agenda.png" ><strong>Date Debut</strong> </div>
+              <input class="date" id="datetime" type="date" name="bday">
+                </div>
+                <div class="De">
+                <div class="depart"> <img src="img/maps.png" >  <strong>DUREE</strong></div>
+                <input class="text" type="number" id="inpt" name="bday">
+               </div>
+               </div>
+                 <button id="btnres">Réserver maintenant</button>
+
+                </div>
+                 
+
+          
+           </div>
+      </section>
+      <section class="generale">
+          <div class="reservation">
+               <div class="res-info">
+                <div class="information">
+                    
+                 <div class="image">
+                   
+                 </div>
+                </div>
+              </div>
+              <div>
+                 <form>
+                     <div>
+                         <div class="form-input">
+                             <p>
+                                 <label>Nom <span >*</span></label><br />
+                                 <span><input type="text" name="first-name" class="inpttext" placeholder="Votre nom" /></span>
+                                 </p>
+                                 <p>
+                                 <label>Prénom <span>*</span></label><br />
+                                 <span ><input type="text" class="inpttext" name="last-name" placeholder="Votre prenom" /></span>
+                                 </p>
+                                 <p >
+                                 <label>Age <span >*</span></label><br />
+                                 <span><input type="number" class="inpttext" name="age" placeholder="Votre number"/></span>
+                                 </p>
+                         </div>
+                       <div  class="form-input">
+                         <p>
+                             <label>Téléphone <span>*</span></label><br />
+                             <span><input type="text" class="inpttext" placeholder="Votre Téléphone" /></span>
+                         </p>
+                         <p class="one-half">
+                         <label>Email <span>*</span></label><br />
+                         <span><input type="email" class="inpttext" name="email" placeholder="Votre Email"   /></span>
+                         </p>
+                         <p>
+                             <label>Addresse </label><br />
+                             <span ><input type="text" class="inpttext" name="address" placeholder="Votre Adresse"/></span>
+                             </p>
+                       </div>
+                       <div>
+                        
+                       </div>  
+                     <div>
+                         <p>
+                             <label>Ville </label><br />
+                             <span ><input type="text" class="inpttext" name="city" placeholder="Votre ville"/></span>
+                             </p>
+                     </div>
+                    
+                     <p class="submit"><input type="submit"class="inpttext3"  value="Reserver" /></p>
+                     </div><div></div></form>
+              </div>
+          </div>
+         
+      </section>
+      <script src="js/file2.js" ></script>
+</body>
+</html>
