@@ -67,7 +67,7 @@
               <div class="D">
                 <div class="De">
               <div class="depart"><img src="img/agenda.png" ><strong>Date Debut</strong> </div>
-              <input class="date" id="datetime" type="date" name="bday">
+              <input class="date" onchange="getdate()" id="datetime" type="date" name="bday">
                 </div>
                 <div class="De">
                 <div class="depart"> <img src="img/maps.png" >  <strong>DUREE</strong></div>
@@ -98,29 +98,29 @@
                          <div class="form-input">
                              <p>
                                  <label>Nom <span >*</span></label><br />
-                                 <span><input type="text" name="first-name" class="inpttext" placeholder="Votre nom" /></span>
+                                 <span><input type="text" name="first-name" id="nom" class="inpttext" placeholder="Votre nom" /></span>
                                  </p>
                                  <p>
                                  <label>Prénom <span>*</span></label><br />
-                                 <span ><input type="text" class="inpttext" name="last-name" placeholder="Votre prenom" /></span>
+                                 <span ><input type="text" class="inpttext" id="prenom" name="last-name" placeholder="Votre prenom" /></span>
                                  </p>
                                  <p >
-                                 <label>Age <span >*</span></label><br />
-                                 <span><input type="number" class="inpttext" name="age" placeholder="Votre number"/></span>
+                                 <label>Date Permis <span >*</span></label><br />
+                                 <span><input type="date" class="inpttext" id="age" name="age" onchange="getdate()" placeholder="Votre number"/></span>
                                  </p>
                          </div>
                        <div  class="form-input">
                          <p>
                              <label>Téléphone <span>*</span></label><br />
-                             <span><input type="text" class="inpttext" placeholder="Votre Téléphone" /></span>
+                             <span><input type="text" class="inpttext" id="tele" placeholder="Votre Téléphone" /></span>
                          </p>
                          <p class="one-half">
-                         <label>Email <span>*</span></label><br />
-                         <span><input type="email" class="inpttext" name="email" placeholder="Votre Email"   /></span>
+                         <label>Email <span>*</span></label><br/>
+                         <span><input type="email" class="inpttext" id="mail" name="email" placeholder="Votre Email"/></span>
                          </p>
                          <p>
                              <label>Addresse </label><br />
-                             <span ><input type="text" class="inpttext" name="address" placeholder="Votre Adresse"/></span>
+                             <span ><input type="text" class="inpttext" id="adress" name="address" placeholder="Votre Adresse"/></span>
                              </p>
                        </div>
                        <div>
@@ -129,16 +129,30 @@
                      <div>
                          <p>
                              <label>Ville </label><br />
-                             <span ><input type="text" class="inpttext" name="city" placeholder="Votre ville"/></span>
+                             <span ><input type="text" class="inpttext" id="ville" name="city" placeholder="Votre ville"/></span>
                              </p>
                      </div>
                     
-                     <p class="submit"><input type="submit"class="inpttext3"  value="Reserver" /></p>
+                     <p class="submit"><input type="button"class="inpttext3" id="reserv"  value="Reserver"  /></p>
                      </div><div></div></form>
               </div>
           </div>
          
       </section>
+      <section>
+        <div class="bg-modal-2">
+          <div class="modal-content2">
+              <div class="close">+</div>
+              <h1>DACIA</h1>
+              <img src="img/Galerie/img3.png" class="taille" alt="logo">
+              <div class="form">
+              <div class="info"><span class="info-tion">NOM</span></div>
+              <div class="info"><span class="info-tion">Prenom</span></div>
+              <div class="info"><span class="info-tion">DATE DEBUT</span></div>
+              <div class="info"><span class="info-tion">DATE RETOUR</span></div>
+              </div>
+          </div>
+      </div>
       <script src="js/file2.js" ></script>
 </body>
 </html>

@@ -3,10 +3,6 @@
 %width-resv{
     
     width: 70%;
-    //margin-top: 0px;
-    //background-color: yellowgreen;
-   
-    
  }
  .add{
     margin: -2px;
@@ -160,6 +156,9 @@
            form{
                width: 50%;
                margin-top: 80px;
+               .taille{
+                   width: 300px;
+               }
                .form-input{
                    display: flex;
                    justify-content: space-between;
