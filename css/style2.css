@@ -205,7 +205,8 @@ body {
   margin-left: 5px;
   height: 39px;
   width: 41px;
-  margin-top: 15px; }
+  margin-top: 15px;
+  cursor: pointer; }
 
 .Resr {
   color: #ffffff;
@@ -313,6 +314,10 @@ body {
       .generale .reservation form .form-input {
         display: flex;
         justify-content: space-between; }
+        .generale .reservation form .form-input #age {
+          width: 248px !important; }
+        .generale .reservation form .form-input #adress {
+          height: 50px; }
       .generale .reservation form label {
         margin: 10px; }
       .generale .reservation form .inpttext {
@@ -349,10 +354,129 @@ body {
         color: white;
         border: none; }
 
+@media screen and (max-width: 1200px) {
+  .D {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    margin-top: 30px; }
+
+  .De {
+    margin-top: 20px;
+    width: 100%; }
+    .De #inpt {
+      width: 100%; }
+
+  .Resr {
+    height: 477px; }
+
+  .reservation {
+    flex-direction: column; }
+    .reservation .res-info {
+      width: 100% !important; }
+
+  #taille {
+    width: 333px; }
+
+  form {
+    /* margin-top: 80px; */
+    margin: auto; }
+    form .taille {
+      width: 300px; }
+    form .form-input {
+      display: flex; }
+      form .form-input #age {
+        width: 248px !important; }
+      form .form-input #adress {
+        height: 50px; }
+    form label {
+      margin: 10px; }
+    form .inpttext {
+      background: transparent;
+      border: 0px;
+      padding: 12px 20px;
+      line-height: 19px;
+      margin: 10px;
+      font-size: 100%;
+      font-family: inherit;
+      color: inherit;
+      border: 1px solid;
+      border-radius: 2px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s; }
+    form .inpttext3 {
+      background: transparent;
+      border: 0px;
+      padding: 12px 20px;
+      line-height: 19px;
+      margin: 10px;
+      font-size: 100%;
+      font-family: inherit;
+      color: inherit;
+      border: 1px solid;
+      border-radius: 2px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+      background-color: #05AAEA;
+      color: white;
+      border: none; } }
+@media screen and (max-width: 900px) {
+  form {
+    /* margin-top: 80px; */
+    width: 60%;
+    margin: auto; }
+    form .taille {
+      width: 300px; }
+    form .form-input {
+      display: flex; }
+      form .form-input #age {
+        width: 248px !important; }
+      form .form-input #adress {
+        height: 50px; }
+    form label {
+      margin: 10px; }
+    form .inpttext {
+      background: transparent;
+      border: 0px;
+      padding: 12px 20px;
+      line-height: 19px;
+      margin: 10px;
+      font-size: 100%;
+      font-family: inherit;
+      color: inherit;
+      border: 1px solid;
+      border-radius: 2px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s; }
+    form .inpttext3 {
+      background: transparent;
+      border: 0px;
+      padding: 12px 20px;
+      line-height: 19px;
+      margin: 10px;
+      font-size: 100%;
+      font-family: inherit;
+      color: inherit;
+      border: 1px solid;
+      border-radius: 2px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+      background-color: #05AAEA;
+      color: white;
+      border: none; } }
 /*information*/
 .bg-modal-2 {
   width: 100%;
-  height: 1725px;
+  height: 2122px;
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 0;
@@ -363,14 +487,14 @@ body {
 
 .modal-content2 {
   width: 500px;
-  height: 505px;
+  height: 562px;
   background-color: white;
   border-radius: 4px;
   text-align: center;
   padding: 20px;
   position: relative;
   margin: auto;
-  margin-top: 1020px; }
+  margin-top: 1200px; }
   .modal-content2 .close {
     position: absolute;
     top: 0;
@@ -405,5 +529,90 @@ body {
     margin-top: -3px; }
     .modal-content2 .form a:hover {
       cursor: pointer; }
+
+/*information*/
+.condition {
+  width: 100%;
+  height: 500px;
+  margin: Auto;
+  justify-content: center; }
+  .condition h1 {
+    margin-top: 40px;
+    text-align: center;
+    color: #000; }
+  .condition .C1 {
+    position: relative;
+    left: 30%;
+    width: 600px;
+    height: 400px;
+    background-size: cover;
+    background-size: 110%;
+    background-position: center; }
+  .condition .CO {
+    position: relative;
+    margin-top: -300px;
+    margin-left: 300px;
+    color: white;
+    width: 400px;
+    height: 180px;
+    padding: 30px;
+    background-color: #05AAEA; }
+
+footer {
+  width: 100%;
+  background-color: #05AAEA;
+  text-align: center;
+  margin-top: 90px;
+  padding: 10px; }
+  footer .generale2 {
+    width: 100%;
+    margin: auto; }
+    footer .generale2 .Menu-footer {
+      margin-top: 40px; }
+      footer .generale2 .Menu-footer a {
+        color: white;
+        padding: 10px;
+        font-weight: bold; }
+    footer .generale2 .footer-info-complementaire {
+      color: white;
+      margin-top: 40px;
+      margin-bottom: 30px; }
+    footer .generale2 .media {
+      margin-top: 67px; }
+      footer .generale2 .media ul li {
+        list-style: none;
+        margin: 10px 30px;
+        display: inline-block;
+        font-size: 20px;
+        padding: 8px 12px;
+        color: white;
+        border: 1px solid white;
+        border-radius: 50%;
+        background-color: white;
+        transition: .5s; }
+    footer .generale2 h5 {
+      color: white; }
+  footer .fa {
+    color: #05AAEA; }
+
+@media screen and (max-width: 1000px) {
+  .Menu-footer {
+    margin-top: 40px; }
+    .Menu-footer a {
+      display: block; }
+
+  .media {
+    margin-top: 67px; }
+    .media ul li {
+      list-style: none;
+      margin: 10px 10px !important;
+      display: inline-block;
+      font-size: 20px;
+      padding: 8px 12px;
+      color: white;
+      border: 1px solid white;
+      border-radius: 50%;
+      background-color: white;
+      transition: .5s; } }
 
 /*# sourceMappingURL=style2.css.map */

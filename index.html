@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Location cars</title>
 </head>
@@ -22,7 +23,7 @@
          <a href="#Galerie">GALERIES</a>
          <a href="#service">SERVICE</a>
          <a href="#contact">CONTACT</a>
-         <a href="reservation.html">RESERVATION</a>
+         <a href="#">RESERVATION</a>
          <a class="button">Se connecter</a>
          <a class="button-2" id="btn-two">S'inscrire</a>
      </div>
@@ -34,7 +35,7 @@
            <a href="#Galerie">GALERIES</a>
            <a href="#service">SERVICE</a>
            <a href="#contact">CONTACT</a>
-           <a href="reservation.html">RESERVATION</a>
+           <a href="#">RESERVATION</a>
        </div>
        <div class="btn">
         <button class="button-2" id="btn-two" >S'inscrire</button>
@@ -62,21 +63,21 @@
         <button class="w3-button w3-black w3-display-left" onclick="Incrementer(-1)">&#10094;</button>
         <div class="mySlides Galerie-first">
             <div class="Galerie-info">
-                <h3>PEUGOT</h3>
+                <h3 id="titre"></h3>
                 <div class="border2"></div>
                 <div class="Galerie-info-first">
-                    <span>168</span>
-                    <span>&nbsp;DH*</span><br>
-                    <span>Kilométrage illimité + Service Inclus </span><br>
+                    <span id="prix"></span>
+                    <span id="money">&nbsp;</span><br>
+                    <span id="desc"></span><br>
                     <button>RESERVER MAINTENANT</button>
                 </div>    
             </div>
             <div class="Galerie-image">
-                <img src="img/Galerie/img1.png" class="taille">
+                <img src="img/Galerie/img3.png" id="image" class="taille">
             </div>
 
         </div>
-        <div class="mySlides Galerie-first">
+        <!-- <div class="mySlides Galerie-first">
 
             <div class="Galerie-info">
                 <h3>HYUNDAI</h3>
@@ -93,8 +94,8 @@
                 <img src="img/Galerie/img2.png" class="taille">
             </div>
 
-        </div>
-        <div class="mySlides Galerie-first">
+        </div> -->
+        <!-- <div class="mySlides Galerie-first">
 
             <div class="Galerie-info">
                 <h3>DACIA</h3>
@@ -111,7 +112,7 @@
                 <img src="img/Galerie/img3.png" class="taille">
             </div>
 
-        </div>
+        </div> -->
         <button class="w3-button w3-black w3-display-right" id="exp" onclick="Incrementer(1)">&#10095;</button>  
     </section>
     <!-- Service -->
@@ -163,17 +164,17 @@
             <div class="Contact-input">
                 <div>
                     <div>
-                        <input type="text" class="Contact-input-first" placeholder="Votre Nom">
+                        <input type="text" class="Contact-input-first inpttext" id="name" placeholder="Votre Nom">
                     </div>
                     <div>
-                        <input type="text" class="Contact-input-first" placeholder="Votre Email">
+                        <input type="text" class="Contact-input-first inpttext" id="email" placeholder="Votre Email">
                     </div>
                 </div>
                 <div>
-                    <textarea class="Contact-input-first" placeholder="Votre Message"></textarea>
+                    <textarea class="Contact-input-first inpttext" id="text" placeholder="Votre Message"></textarea>
                 </div>
                 <div class="Contact-btn">
-                    <button>ENVOYER</button>
+                    <button id="env">ENVOYER</button>
                 </div>
             </div>
         </div>
@@ -181,7 +182,7 @@
     <!-- Marque -->
     <div class="Blank"></div>
     <footer>
-<div class="generale">
+<div class="generale2">
     <div class="Menu-footer">
         <a>ACCEUIL</a>
        <a>GALERIES</a>
@@ -244,5 +245,6 @@
 
 
     <script src="js/file.js"></script>
+    <script src="js/file3.js"></script>
 </body>
 </html>

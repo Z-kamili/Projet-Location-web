@@ -211,7 +211,7 @@ body {
 .Galerie {
   height: 700px; }
   .Galerie .mySlides {
-    display: none; }
+    display: flex; }
   .Galerie .w3-black {
     margin-left: 100px;
     width: 50px;
@@ -506,22 +506,22 @@ footer {
   text-align: center;
   margin-top: 90px;
   padding: 10px; }
-  footer .generale {
+  footer .generale2 {
     width: 100%;
     margin: auto; }
-    footer .generale .Menu-footer {
+    footer .generale2 .Menu-footer {
       margin-top: 40px; }
-      footer .generale .Menu-footer a {
+      footer .generale2 .Menu-footer a {
         color: white;
         padding: 10px;
         font-weight: bold; }
-    footer .generale .footer-info-complementaire {
+    footer .generale2 .footer-info-complementaire {
       color: white;
       margin-top: 40px;
       margin-bottom: 30px; }
-    footer .generale .media {
+    footer .generale2 .media {
       margin-top: 67px; }
-      footer .generale .media ul li {
+      footer .generale2 .media ul li {
         list-style: none;
         margin: 10px 30px;
         display: inline-block;
@@ -532,7 +532,7 @@ footer {
         border-radius: 50%;
         background-color: white;
         transition: .5s; }
-    footer .generale h5 {
+    footer .generale2 h5 {
       color: white; }
   footer .fa {
     color: #05AAEA; }
@@ -641,8 +641,7 @@ footer {
     width: 60%;
     display: block;
     margin: 20px auto;
-    padding: 10px 10px;
-    border: none; }
+    padding: 10px 10px; }
   .modal-content .form .erreur {
     margin: 15px;
     position: relative;

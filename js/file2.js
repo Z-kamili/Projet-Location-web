@@ -9,7 +9,7 @@ var voiture = [
     },
     {
         nom : "REANUALT",
-        prix : "168 DH",
+        prix : "100 DH",
         desc : "Kilométrage illimité + Service Inclus",
         path : "img/Galerie/img1.png"
     },
@@ -25,33 +25,45 @@ var title = document.createElement("H1");
 var  prix = document.createElement("p");
 var desc = document.createElement("p");
 var img = document.createElement("img");
+img.setAttribute("id","taille");
 var liste, texte;
 var selectedValue = "";
 var dateEntered = "";
-var date1 = new Date();
+var dateEntered2 = "";
+var date1;
+var nom2 = document.getElementById("Nom");
+var prenom2 = document.getElementById("Prenom");
+var Date_debut2 = document.getElementById("Date");
+var EMAIL = document.getElementById("EMAIL");
+var duree;
 // var date = document.getElementById("datetime").value;
 // var duree = document.getElementById("inpt").value;
+var g;
+var titre = document.getElementById("titre");
+var image = document.querySelector(".taille");
 
 function getSelectValue(){
      selectedValue = document.getElementById("liste").value;
 }
-function getdate(){
-    var input = document.getElementById("age").value;
-  dateEntered  = new Date(input);
+
+function getdate2(){
+    var input = document.getElementById("datetime").value;
+  dateEntered = new Date(input);
+ 
+//   console.log(dateEntered.getFullYear());
+}
+function getdate1(){
+    var input = document.getElementById("datepermis").value;
+  dateEntered2 = new Date(input);
+ 
 //   console.log(dateEntered.getFullYear());
 }
 document.getElementById("btnres").addEventListener("click",()=>{
-    var date = document.getElementById("datetime").value;
-var duree = document.getElementById("inpt").value;
-        // console.log(texte);
-        // console.log(selectedValue);
-        // console.log(duree);
-        // console.log(date);
+ duree = document.getElementById("inpt").value;
+ console.log(dateEntered);
         if( dateEntered == "" || duree == "" || selectedValue == "" ){
             alert("remplir les champs");
         }else{
-    //    date1 = dateEntered;
-    //    date1 = date1.getDay() + duree;
         document.getElementsByClassName("generale")[0].style.display = "block";
         $('html,body').animate({
             scrollTop: $(".generale").offset().top
@@ -62,6 +74,7 @@ var duree = document.getElementById("inpt").value;
                     prix.innerText = voiture[i].prix;
                     desc.innerText = voiture[i].desc;
                     img.src=voiture[i].path;
+                    g = i;
                     information[0].appendChild(title);
                     information[0].appendChild(prix);
                     information[0].appendChild(desc);
@@ -101,14 +114,18 @@ var duree = document.getElementById("inpt").value;
              }
               
             } 
+            // function addDays(date, days) {
+            //     const copy = new Date(Number(date))
+            //     copy.setDate(date.getDate() + days)
+            //     return copy
+            //   }
 //validation
  document.getElementById("reserv").addEventListener("click",()=>{
     var input = document.getElementsByClassName("inpttext");
-    var test = false;
     var nom = document.getElementById("nom").value,prenom = document.getElementById("prenom").value,
-    tele = document.getElementById("tele").value,email = document.getElementById("mail").value,
-    adr = document.getElementById("adress").value;
-
+    tele = document.getElementById("tele"),email = document.getElementById("mail").value,
+    adr = document.getElementById("adress");
+     
     if(nom == "" || prenom == "" || tele == "" || email == "" || adr == "" || dateEntered == ""){
         alert("vous devez remplir tous les champs");
     }else{
@@ -120,12 +137,18 @@ var duree = document.getElementById("inpt").value;
             }else{
                 var datetime = new Date();
                 var d1 = datetime.getFullYear();
-                var d2 = dateEntered.getFullYear();
+                var d2 = dateEntered2.getFullYear();
             
                 if((d1-d2)<=2){
                     alert("la date du permis doit etre supurieur que 2 ans");
                 }else{
-                    
+                   
+                    nom2.innerText = nom;
+                    prenom2.innerText = prenom;
+                    Date_debut2.innerText = dateEntered;
+                    titre.innerText = voiture[g].nom;
+                    image.src = voiture[g].path;
+                    EMAIL.innerText = email;
                     document.getElementsByClassName("bg-modal-2")[0].style.display = "flex";
                     document.querySelector('body').style.overflowY = "hidden";
                     console.log("hello");
@@ -141,5 +164,11 @@ document.getElementsByClassName("close")[0].addEventListener("click",()=>{
     document.location.reload();
 
 
-})
+});
+document.querySelector(".add").addEventListener("click",()=>{
+
+    document.location.href = "index.html";
+
+});
+
 

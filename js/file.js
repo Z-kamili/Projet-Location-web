@@ -13,23 +13,52 @@
   var myjson;
   var data = {};
   var x = document.getElementsByClassName("mySlides");
+  var titre = document.getElementById("titre");
+  var prix = document.getElementById("prix");
+  var money = document.getElementById("money");
+  var desc = document.getElementById("desc");
+  var image = document.getElementById("image");
+  var voiture = [
+
+    {
+        nom : "DACIA",
+        prix : "200",
+        money: "DH*",
+        desc : "Kilométrage illimité + Service Inclus",
+        path : "img/Galerie/img3.png"
+    },
+    {
+        nom : "REANUALT",
+        prix : "100",
+        money : "DH*",
+        desc : "Kilométrage illimité + Service Inclus",
+        path : "img/Galerie/img1.png"
+    },
+    {
+        nom : "HYUNDAI",
+        prix : "168",
+        money : "DH*",
+        desc : "Kilométrage illimité + Service Inclus",
+        path : "img/Galerie/img2.png"
+    }
+];
 
   /*slider*/
-  Afficher(slideIndex);
-function Afficher(n){
-  var i;
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "flex";  
-}
-var a = 0;
+Afficher2(slideIndex);
 function Incrementer(n) {
   slideIndex = slideIndex + n;
-    Afficher(slideIndex);
+    Afficher2(slideIndex);
     
+  }
+  function Afficher2(n){
+
+  if (n > voiture.length) {slideIndex = 1}
+  else if (n < 1) {slideIndex = voiture.length}
+  titre.innerText = voiture[slideIndex -1].nom;
+  prix.innerText = voiture[slideIndex - 1].prix;
+  money.innerText = voiture[slideIndex - 1].money;
+  desc.innerText = voiture[slideIndex - 1].desc;
+  image.src = voiture[slideIndex - 1].path;
   }
   for(var i = 0;i<=1;i++){
     document.getElementsByClassName("button-2")[i].addEventListener('click',()=>{
@@ -97,7 +126,7 @@ if(!validEmail(input[i].value) && i == 0){
   input[i].placeholder = "erreur";
 }else{
    if(data.email == input[0].value && data.password == input[1].value){
-    document.location.reload();
+    document.location.href = "reservation.html";
    }else{
      if(data.email != input[0].value){
       input[i].style.borderColor = "red";
@@ -152,6 +181,29 @@ localStorage.setItem("data1",JSON.stringify(data));
 // myjson = JSON.stringify(data);
      document.location.reload();
     }
+});
+/*validation*/
+document.getElementById("env").addEventListener("click",()=>{
+  var nom = document.getElementById("name").value,
+  email = document.getElementById("email").value,textarea = document.getElementById("text").value;
+   
+  if(nom == "" || email == "" || textarea == ""){
+      alert("vous devez remplir tous les champs");
+  }else{
+      if(!validname(nom)){
+          alert("le nom n'est pas valide");
+      }else{
+          if(!validEmail(email)){
+              alert("l'email n'est pas valide");
+          }else{
+          
+              alert("la forme bien valide");
+              document.location.reload();
+              
+          }
+      }
+  }
+  
 });
 
 

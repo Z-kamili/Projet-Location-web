@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style2.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
@@ -13,27 +15,21 @@
         <div class="Menu" id="Menu">
           
           <label for="check" class="checkbtn">
-           <i class="fas fa-bars"></i>
+           <i class="fas fa-bars "></i>
           </label>
           <input type="checkbox" id="check">
           <div class="Menu-link2" >
-           <a href="#Menu">ACCEUIL</a>
-           <a href="#Galerie">GALERIES</a>
-           <a href="#service">SERVICE</a>
-           <a href="#contact">CONTACT</a>
-           <a>RESERVATION</a>
-           <a class="button">Se connecter</a>
-           <a class="button-2" id="btn-two">S'inscrire</a>
+            <a href="index.html">ACCEUIL</a>
+            <a href="#R">RESERVATION</a>
+            <a href="#C">POURQUOI NOUS</a>
        </div>
          <div class="logo">
              <img src="img/logo.jpg" width="100px">
          </div>
          <div class="Menu-link" >
-             <a href="#Menu">ACCEUIL</a>
-             <a href="#Galerie">GALERIES</a>
-             <a href="#service">SERVICE</a>
-             <a href="#contact">CONTACT</a>
-             <a>RESERVATION</a>
+             <a href="index.html">ACCEUIL</a>
+             <a href="#R">RESERVATION</a>
+             <a href="#C">POURQUOI NOUS</a>
          </div>
          <!-- <div class="btn">
           <button class="button-2" id="btn-two" >S'inscrire</button>
@@ -67,7 +63,7 @@
               <div class="D">
                 <div class="De">
               <div class="depart"><img src="img/agenda.png" ><strong>Date Debut</strong> </div>
-              <input class="date" onchange="getdate()" id="datetime" type="date" name="bday">
+              <input class="date" onchange="getdate2()" id="datetime" type="date" name="bday">
                 </div>
                 <div class="De">
                 <div class="depart"> <img src="img/maps.png" >  <strong>DUREE</strong></div>
@@ -87,7 +83,7 @@
                <div class="res-info">
                 <div class="information">
                     
-                 <div class="image">
+                 <div  class="image">
                    
                  </div>
                 </div>
@@ -104,10 +100,7 @@
                                  <label>Prénom <span>*</span></label><br />
                                  <span ><input type="text" class="inpttext" id="prenom" name="last-name" placeholder="Votre prenom" /></span>
                                  </p>
-                                 <p >
-                                 <label>Date Permis <span >*</span></label><br />
-                                 <span><input type="date" class="inpttext" id="age" name="age" onchange="getdate()" placeholder="Votre number"/></span>
-                                 </p>
+                                 
                          </div>
                        <div  class="form-input">
                          <p>
@@ -118,41 +111,103 @@
                          <label>Email <span>*</span></label><br/>
                          <span><input type="email" class="inpttext" id="mail" name="email" placeholder="Votre Email"/></span>
                          </p>
-                         <p>
-                             <label>Addresse </label><br />
-                             <span ><input type="text" class="inpttext" id="adress" name="address" placeholder="Votre Adresse"/></span>
-                             </p>
+                       </div>
+                       <div class="form-input">
+                        <p>
+                          <label>Addresse </label><br />
+                          <span ><input type="text" class="inpttext" id="adress" name="address" placeholder="Votre Adresse"/></span>
+                          </p>
+                        <p >
+                          <label>Date Permis <span >*</span></label><br />
+                          <span><input type="date" class="inpttext" id="datepermis" name="age" onchange="getdate1()" placeholder="Votre number"/></span>
+                          </p>
+                        
                        </div>
                        <div>
                         
                        </div>  
-                     <div>
-                         <p>
-                             <label>Ville </label><br />
-                             <span ><input type="text" class="inpttext" id="ville" name="city" placeholder="Votre ville"/></span>
-                             </p>
-                     </div>
+                    
                     
                      <p class="submit"><input type="button"class="inpttext3" id="reserv"  value="Reserver"  /></p>
-                     </div><div></div></form>
+                     </div></form>
               </div>
           </div>
          
       </section>
       <section>
-        <div class="bg-modal-2">
-          <div class="modal-content2">
-              <div class="close">+</div>
-              <h1>DACIA</h1>
-              <img src="img/Galerie/img3.png" class="taille" alt="logo">
-              <div class="form">
-              <div class="info"><span class="info-tion">NOM</span></div>
-              <div class="info"><span class="info-tion">Prenom</span></div>
-              <div class="info"><span class="info-tion">DATE DEBUT</span></div>
-              <div class="info"><span class="info-tion">DATE RETOUR</span></div>
+        <div id="C" class="condition">
+          <div class="cond1">
+          <h1>POUR QUOI NOUS</h1>
+           <div class="C1" >
+             <img src="img/Galerie/1.jpg">
+           </div>
+          <div class="CO">
+              <h2>longue durée</h2>
+              <p>Trouvez votre voiture pour une longue durée avec Belina Car. Des prix pas chers pour votre LLD à Marrakech</p>
+          </div>
+          <!--
+          <div class="cond1">
+              <h1 >CONDITION</h1>
+               <div class="C1"style="background-image: url('images/2.jpg')" ></div>
+              <div class="CO">
+                  <h2>Durée</h2>
+                  <p>La location est consentie pour la durée déterminée au contrat sauf prolongation conventionnelle accordée par le loueur.</p>
               </div>
+              <div class="cond1">
+                  <h1 >CONDITION</h1>
+                   <div class="C1"style="background-image: url('images/3.jpg')" ></div>
+                  <div class="CO">
+                      <h2>Âge minimal</h2>
+                      <p>Le conducteur doit avoir au minimum 21 ans, et détenir un permis de conduire valable depuis 2 ans au moins.</p>
+                  </div>
+      </div>
+     </div> -->
+     </div>
+      </div>
+      </section>
+      <footer>
+        <div class="generale2">
+          <div class="Menu-footer">
+            <a>ACCEUIL</a>
+           <a>GALERIES</a>
+           <a>SERVICE</a>
+           <a>CONTACT</a>
+           <a>RESERVATION</a>
+        </div>    
+        <div class="media">
+          <ul>
+              <li><i class="fa fab fa-facebook"></i></li>
+              <li><i class="fa fab fa-google"></i></li>
+              <li><i class="fa fab fa-twitter"></i></li>
+              <li><i class="fa fab fa-instagram"></i></li>
+          </ul>
+       </div>
+       <div class="footer-info-complementaire">
+        <p>Vous avez besoin de plus d'informations</p>
+        <p>Adresse: RUE ABOUTAIB TABARI QU ELCOURSE SAFI</p>
+        <b>+212 65746897</b>
+       </div>
+       <hr>
+       <h5>&copy; 2020 Kamilidvlpr.Com</h5> 
+        </footer>
+    <div class="bg-modal-2">
+      <div class="modal-content2">
+          <div class="close">+</div>
+          <h1 id="titre"></h1>
+          <img src="" class="taille" alt="logo">
+          <div class="form">
+          <div class="info"><span id="Nom"></span></div>
+          <div class="info"><span id="Prenom"></span></div>
+          <div class="info"><span id="EMAIL"></span></div>
+          <div class="info"><span id="Date"></span></div>
           </div>
       </div>
+  </div>
+        </div>
+            
+  </footer>
+      
       <script src="js/file2.js" ></script>
+      <script src="js/file3.js"></script>
 </body>
 </html>
