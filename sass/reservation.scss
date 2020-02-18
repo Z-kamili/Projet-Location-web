@@ -216,7 +216,7 @@
 
 
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1000px){
 
 
     .D{
@@ -251,12 +251,16 @@
 
     form{
     /* margin-top: 80px; */
-    margin: auto;
+    width: 70% !important;
+    margin-top: 80px !important;
+    text-align: center;
         .taille{
             width: 300px;
         }
         .form-input{
             display: flex;
+            justify-content: space-between;
+            flex-direction: column;
          
             #age{
                 width: 248px !important;
@@ -283,6 +287,7 @@
         -moz-appearance: none;
         -webkit-transition: all 0.2s;
         transition: all 0.2s;
+        width: 220px;
         }
         .inpttext3{
             background: transparent;

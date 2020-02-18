@@ -58,6 +58,14 @@ function getdate1(){
  
 //   console.log(dateEntered.getFullYear());
 }
+function dateDiff(date1, date2){
+    // var diff = {}                           // Initialisation du retour
+    var tmp = date1 - date2;
+ 
+    diff = parseInt(Math.ceil(tmp/(1000 * 60 * 60 * 24 * 30 * 12)));
+     
+    return diff;
+}
 document.getElementById("btnres").addEventListener("click",()=>{
  duree = document.getElementById("inpt").value;
  console.log(dateEntered);
@@ -135,11 +143,13 @@ document.getElementById("btnres").addEventListener("click",()=>{
             if(!validEmail(email)){
                 alert("l'email n'est pas valide");
             }else{
+                // var datetime = new Date();
+                // var d1 = datetime.getFullYear();
+                // var d2 = dateEntered2.getFullYear();
                 var datetime = new Date();
-                var d1 = datetime.getFullYear();
-                var d2 = dateEntered2.getFullYear();
-            
-                if((d1-d2)<=2){
+            var d2 =     dateDiff(datetime,dateEntered2);
+            console.log(d2);
+                if(d2<=2){
                     alert("la date du permis doit etre supurieur que 2 ans");
                 }else{
                    
@@ -148,9 +158,10 @@ document.getElementById("btnres").addEventListener("click",()=>{
                     Date_debut2.innerText = dateEntered;
                     titre.innerText = voiture[g].nom;
                     image.src = voiture[g].path;
+                    console.log(voiture[g].path);
                     EMAIL.innerText = email;
-                    document.getElementsByClassName("bg-modal-2")[0].style.display = "flex";
                     document.querySelector('body').style.overflowY = "hidden";
+                    document.getElementsByClassName("bg-modal-2")[0].style.display = "flex";
                     console.log("hello");
                 }
             }

@@ -89,13 +89,13 @@
         margin-top: -98px;
         text-align: center;
         .Galerie-info{
+            display: block;
             .border2{
             width: 80px;
             height: 10px;
             background: $color;
             margin-top: -35px;
-            display: none;
-           
+           display: none;
             }
             h3{
                 font-size: 276%;
@@ -123,9 +123,7 @@
     }
     .Galerie{
         height: 700px;
-        .mySlides{
-            display:none;
-        }
+       
         .w3-black {
             margin-left: 100px;
             width: 50px;
@@ -162,9 +160,6 @@
     }
     .Galerie{
         height: 700px;
-        .mySlides{
-            display:none;
-        }
         .w3-black {
             margin-left: 16px;
             width: 50px;
@@ -200,9 +195,6 @@
     }
     .Galerie{
         height: 700px;
-        .mySlides{
-            display:none;
-        }
         .w3-black {
             margin-left: 16px;
             width: 50px;
@@ -238,9 +230,7 @@
     }
     .Galerie{
         height: 700px;
-        .mySlides{
-            display:none;
-        }
+        
         .w3-black {
             margin-left: 5px;
             width: 50px;
