@@ -160,7 +160,7 @@ document.getElementById("btnres").addEventListener("click",()=>{
                     image.src = voiture[g].path;
                     console.log(voiture[g].path);
                     EMAIL.innerText = email;
-                    document.querySelector('body').style.overflowY = "hidden";
+                    // document.querySelector('body').style.overflowY = "hidden";
                     document.getElementsByClassName("bg-modal-2")[0].style.display = "flex";
                     console.log("hello");
                 }
