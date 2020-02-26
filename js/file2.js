@@ -73,7 +73,7 @@ document.getElementById("btnres").addEventListener("click",()=>{
             alert("remplir les champs");
         }else{
         document.getElementsByClassName("generale")[0].style.display = "block";
-        $('html,body').animate({
+        $('html').animate({
             scrollTop: $(".generale").offset().top
         },'slow');
             for(var i = 0;i<voiture.length;i++){
