@@ -16,10 +16,16 @@
     background-color: white;
     border-radius: 4px;
     text-align: center;
-    padding: 20px;
+    padding: 2px;
     position: relative;
     margin: auto;
     margin-top: 1066px;
+    .btn-two{
+        background-color: $color;
+        color: $white;
+        border: $color;
+        padding: 10px;
+    }
     .close{
         position: absolute;
         top: 0;
