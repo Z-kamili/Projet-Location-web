@@ -75,6 +75,7 @@ document.getElementById("btnres").addEventListener("click",()=>{
         document.getElementsByClassName("generale")[0].style.display = "block";
         $('html').animate({
             scrollTop: $(".generale").offset().top
+            
         },'slow');
             for(var i = 0;i<voiture.length;i++){
                 if(selectedValue == voiture[i].nom){
@@ -169,12 +170,23 @@ document.getElementById("btnres").addEventListener("click",()=>{
     }
     
 });
+
 document.getElementsByClassName("close")[0].addEventListener("click",()=>{
     document.querySelector('.bg-modal-2').style.display = "none";
     document.querySelector('body').style.overflowY = "visible";
     document.location.reload();
 
 
+});
+document.getElementById("cnf").addEventListener("click",()=>{
+    document.querySelector('.bg-modal-2').style.display = "none";
+    // document.querySelector('body').style.overflowY = "visible";
+    document.location.reload();
+});
+document.getElementById("Mdf").addEventListener("click",()=>{
+    document.querySelector('.bg-modal-2').style.display = "none";
+    // document.querySelector('body').style.overflowY = "visible";
+    // document.location.reload();
 });
 document.querySelector(".add").addEventListener("click",()=>{
 
